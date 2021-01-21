@@ -1,0 +1,104 @@
+:root {
+  --vermelho: #E50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--preta);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+header .container {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times, serif;
+  font-size: 40px;
+}
+
+header nav a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 15px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*Abaixo Estilizaçoes da Dive Main, titulo e Sinopse*/
+
+/*filmes-principal ,configurações do background e da dive principal*/
+.filmes-principal {
+  font-size: 16px;
+  background: url('/img/Lucifer-netflix.jpg');
+  height: 85vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filmes-principal .container {
+  margin-left: 30px;
+  width: 70%;
+}
+
+.filmes-principal .sinopse {
+  color: rgb(241, 234, 232);
+  text-shadow: 0px 0px 4px black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin: 50px 0px 50px;
+}
+
+.titulo {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.butao {
+  padding: 15px;
+  margin-left: 30px;
+  color: #fff;
+  background-color: rgb(49, 46, 46);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+
+}
+
+.butao:hover {
+  color: rgb(230, 56, 13)
+}
+
+.butao i {
+  margin-right: 5px;
+}
+
+/*Abaixo Configuraçoes do Carrosel do Owl*/
+.box-filme {
+  margin-top: 4px;
+  height: 80%;
+  width: 100%;
+  display: block;
+}
